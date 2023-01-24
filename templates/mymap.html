@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d26a598842863414057f0699eb672cb4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+                <style>
+                    #float_image_605c24cae89c2e0128ca94af29276fc5 {
+                        position:absolute;
+                        bottom:5%;
+                        left:45%;
+                        }
+                </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d26a598842863414057f0699eb672cb4" ></div>
+        
+    
+            <img id="float_image_605c24cae89c2e0128ca94af29276fc5" alt="float_image"
+                 src="https://geo35.ru/upload/CAllcorp2/995/9957d6a37c0ccdd4085cf7a739e7ca14.png"
+                 style="z-index: 999999">
+            </img>
+            
+</body>
+<script>    
+    
+            var map_d26a598842863414057f0699eb672cb4 = L.map(
+                "map_d26a598842863414057f0699eb672cb4",
+                {
+                    center: [59.867566, 39.936021],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc225d3e59bd034950edbc9267a9ebad = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var marker_71a7e31e2901c51568d81ab95b4fa60a = L.marker(
+                [59.1988, 39.850625],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_828472196aed47475f32c3ba0846ffec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_71a7e31e2901c51568d81ab95b4fa60a.setIcon(icon_828472196aed47475f32c3ba0846ffec);
+        
+    
+        var popup_66f697bc0b04d01255c7eaefc64849e9 = L.popup({"maxWidth": 300});
+
+        
+            var html_9bf6328a2da0d2a013c735d31083d870 = $(`<div id="html_9bf6328a2da0d2a013c735d31083d870" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 22/к1007<br><b>Вид работ</b> Техплан гаража<br><b>Дата выезда</b> 09.01.2023<br><b>Время выезда</b> 10:00<br><b>Кадастровый номер</b> -</div>`)[0];
+            popup_66f697bc0b04d01255c7eaefc64849e9.setContent(html_9bf6328a2da0d2a013c735d31083d870);
+        
+
+        marker_71a7e31e2901c51568d81ab95b4fa60a.bindPopup(popup_66f697bc0b04d01255c7eaefc64849e9)
+        ;
+
+        
+    
+    
+            var marker_132ce11f0034e45e88de1259787a3daa = L.marker(
+                [59.166137, 39.827554],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_8a0ec0cef90d92f3bb4e1b194bbe0a1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_132ce11f0034e45e88de1259787a3daa.setIcon(icon_8a0ec0cef90d92f3bb4e1b194bbe0a1b);
+        
+    
+        var popup_1732d23805183b19720c2ba618467af8 = L.popup({"maxWidth": 300});
+
+        
+            var html_dc4979ba2c35f8c6993a203ac28439a4 = $(`<div id="html_dc4979ba2c35f8c6993a203ac28439a4" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1009<br><b>Вид работ</b> Техплан дома<br><b>Дата выезда</b> 17.01.2023<br><b>Время выезда</b> 9:00<br><b>Кадастровый номер</b> 35:25:0705001:0030</div>`)[0];
+            popup_1732d23805183b19720c2ba618467af8.setContent(html_dc4979ba2c35f8c6993a203ac28439a4);
+        
+
+        marker_132ce11f0034e45e88de1259787a3daa.bindPopup(popup_1732d23805183b19720c2ba618467af8)
+        ;
+
+        
+    
+    
+            var marker_8c978ce2b2e1e719db1cbcf1a8fbe067 = L.marker(
+                [59.214012, 39.950991],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_12a6599a90c4543cd5261434966b58ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8c978ce2b2e1e719db1cbcf1a8fbe067.setIcon(icon_12a6599a90c4543cd5261434966b58ec);
+        
+    
+        var popup_c71d14889fe10c3b265d003eb0218bef = L.popup({"maxWidth": 300});
+
+        
+            var html_47c4c5a98388770ba6fc92134f1b1882 = $(`<div id="html_47c4c5a98388770ba6fc92134f1b1882" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1010<br><b>Вид работ</b> Кадастровая съемка<br><b>Дата выезда</b> 17.01.2023<br><b>Время выезда</b> 14:00<br><b>Кадастровый номер</b> 35:24:0303006:0593</div>`)[0];
+            popup_c71d14889fe10c3b265d003eb0218bef.setContent(html_47c4c5a98388770ba6fc92134f1b1882);
+        
+
+        marker_8c978ce2b2e1e719db1cbcf1a8fbe067.bindPopup(popup_c71d14889fe10c3b265d003eb0218bef)
+        ;
+
+        
+    
+    
+            var marker_25fccbcc6ab1016730ec18ff0f297694 = L.marker(
+                [59.190976, 39.869852],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_0040e5166d0442c44bba8aabb1f5ec26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_25fccbcc6ab1016730ec18ff0f297694.setIcon(icon_0040e5166d0442c44bba8aabb1f5ec26);
+        
+    
+        var popup_cdf399456c24154c7807344bec5db54d = L.popup({"maxWidth": 300});
+
+        
+            var html_cdc17735cbcef489a274974081c46546 = $(`<div id="html_cdc17735cbcef489a274974081c46546" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1014<br><b>Вид работ</b> Техплан гаража<br><b>Дата выезда</b> 20.01.2023<br><b>Время выезда</b> 12:00<br><b>Кадастровый номер</b> 35:24:0000000:3808</div>`)[0];
+            popup_cdf399456c24154c7807344bec5db54d.setContent(html_cdc17735cbcef489a274974081c46546);
+        
+
+        marker_25fccbcc6ab1016730ec18ff0f297694.bindPopup(popup_cdf399456c24154c7807344bec5db54d)
+        ;
+
+        
+    
+    
+            var marker_9af8c7d64f06717f5e1435b1c7626631 = L.marker(
+                [59.045806, 39.779],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_54be92e1050d8bc4efe9a481f156f070 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9af8c7d64f06717f5e1435b1c7626631.setIcon(icon_54be92e1050d8bc4efe9a481f156f070);
+        
+    
+        var popup_1b9b4b1236787cafb566b60986a3bb75 = L.popup({"maxWidth": 300});
+
+        
+            var html_91accc8cb8267b7a09fd5ddf6d367d68 = $(`<div id="html_91accc8cb8267b7a09fd5ddf6d367d68" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/э1<br><b>Вид работ</b> Экспертиза<br><b>Дата выезда</b> 20.01.2023<br><b>Время выезда</b> 9:30<br><b>Кадастровый номер</b> 35:25:0602080:927</div>`)[0];
+            popup_1b9b4b1236787cafb566b60986a3bb75.setContent(html_91accc8cb8267b7a09fd5ddf6d367d68);
+        
+
+        marker_9af8c7d64f06717f5e1435b1c7626631.bindPopup(popup_1b9b4b1236787cafb566b60986a3bb75)
+        ;
+
+        
+    
+    
+            var marker_a575427b6fd55425b4f06f055bab4b0b = L.marker(
+                [59.193495, 39.849644],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_b4eecad018b5a64d743bd40275a14596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a575427b6fd55425b4f06f055bab4b0b.setIcon(icon_b4eecad018b5a64d743bd40275a14596);
+        
+    
+        var popup_094d72df35ed23c7946f0cd5a6b2f21d = L.popup({"maxWidth": 300});
+
+        
+            var html_0c0acf5a30f1af843ab884345c95c315 = $(`<div id="html_0c0acf5a30f1af843ab884345c95c315" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1016<br><b>Вид работ</b> Техплан гаража<br><b>Дата выезда</b> 18.01.2023<br><b>Время выезда</b> 9:00<br><b>Кадастровый номер</b> -</div>`)[0];
+            popup_094d72df35ed23c7946f0cd5a6b2f21d.setContent(html_0c0acf5a30f1af843ab884345c95c315);
+        
+
+        marker_a575427b6fd55425b4f06f055bab4b0b.bindPopup(popup_094d72df35ed23c7946f0cd5a6b2f21d)
+        ;
+
+        
+    
+    
+            var marker_1e9ee8e20d55f04c5cb1f4b5a9128059 = L.marker(
+                [58.971281, 39.970961],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_4dfd37ea47a243680ac7c632a3d7c96d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1e9ee8e20d55f04c5cb1f4b5a9128059.setIcon(icon_4dfd37ea47a243680ac7c632a3d7c96d);
+        
+    
+        var popup_1b8977927ae78cfdc5a4d9734ef08747 = L.popup({"maxWidth": 300});
+
+        
+            var html_3dddad4d3601e51995385f9f2059101e = $(`<div id="html_3dddad4d3601e51995385f9f2059101e" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1015<br><b>Вид работ</b> Техплан дома<br><b>Дата выезда</b> 23.01.2023<br><b>Время выезда</b> 12:00<br><b>Кадастровый номер</b> 35:28:0101018:754</div>`)[0];
+            popup_1b8977927ae78cfdc5a4d9734ef08747.setContent(html_3dddad4d3601e51995385f9f2059101e);
+        
+
+        marker_1e9ee8e20d55f04c5cb1f4b5a9128059.bindPopup(popup_1b8977927ae78cfdc5a4d9734ef08747)
+        ;
+
+        
+    
+    
+            var marker_f67b8a2c0ade68008e8f86d29da13024 = L.marker(
+                [59.257662, 39.744891],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_1866e36a4babf2f0b11ecf45de9da0eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f67b8a2c0ade68008e8f86d29da13024.setIcon(icon_1866e36a4babf2f0b11ecf45de9da0eb);
+        
+    
+        var popup_80b8971b67d6e4b069f4c26960df0208 = L.popup({"maxWidth": 300});
+
+        
+            var html_a086bce37bfcb32885d13a23115963d7 = $(`<div id="html_a086bce37bfcb32885d13a23115963d7" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1017<br><b>Вид работ</b> Межевание<br><b>Дата выезда</b> 18.01.2023<br><b>Время выезда</b> 14:00<br><b>Кадастровый номер</b> 35:25:0501037:1932</div>`)[0];
+            popup_80b8971b67d6e4b069f4c26960df0208.setContent(html_a086bce37bfcb32885d13a23115963d7);
+        
+
+        marker_f67b8a2c0ade68008e8f86d29da13024.bindPopup(popup_80b8971b67d6e4b069f4c26960df0208)
+        ;
+
+        
+    
+    
+            var marker_24abce8713af037abde77e4c7fb800e4 = L.marker(
+                [59.215886, 39.646974],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_deb4a1ff78773dd4bbdcb3d0ddc3c58e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_24abce8713af037abde77e4c7fb800e4.setIcon(icon_deb4a1ff78773dd4bbdcb3d0ddc3c58e);
+        
+    
+        var popup_247f7fc477e77d784763427d13c35d74 = L.popup({"maxWidth": 300});
+
+        
+            var html_b9267db7a75f66d009707fb34913c359 = $(`<div id="html_b9267db7a75f66d009707fb34913c359" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1019<br><b>Вид работ</b> Вынос границ<br><b>Дата выезда</b> 25.01.2023<br><b>Время выезда</b> 14:00<br><b>Кадастровый номер</b> 35:25:0501026:72</div>`)[0];
+            popup_247f7fc477e77d784763427d13c35d74.setContent(html_b9267db7a75f66d009707fb34913c359);
+        
+
+        marker_24abce8713af037abde77e4c7fb800e4.bindPopup(popup_247f7fc477e77d784763427d13c35d74)
+        ;
+
+        
+    
+    
+            var marker_ff491f1c5800d0e3f0d4255c6f254bc2 = L.marker(
+                [59.180279, 39.849922],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_c5ee64858b8bca194ce5b15e6a7face5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ff491f1c5800d0e3f0d4255c6f254bc2.setIcon(icon_c5ee64858b8bca194ce5b15e6a7face5);
+        
+    
+        var popup_d53baf9723a23ed7eadab427c4beaa6b = L.popup({"maxWidth": 300});
+
+        
+            var html_d509ed0524d2a3d52f804e96663ab219 = $(`<div id="html_d509ed0524d2a3d52f804e96663ab219" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1020<br><b>Вид работ</b> Техплан дома<br><b>Дата выезда</b> 19.01.2023<br><b>Время выезда</b> 10:00<br><b>Кадастровый номер</b> 35:25:0705004:13</div>`)[0];
+            popup_d53baf9723a23ed7eadab427c4beaa6b.setContent(html_d509ed0524d2a3d52f804e96663ab219);
+        
+
+        marker_ff491f1c5800d0e3f0d4255c6f254bc2.bindPopup(popup_d53baf9723a23ed7eadab427c4beaa6b)
+        ;
+
+        
+    
+    
+            var marker_0850efd98a59e4a41e8c59eee47eac7a = L.marker(
+                [59.180279, 39.849922],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_58f81e034339e8a4321021d2f13f858f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0850efd98a59e4a41e8c59eee47eac7a.setIcon(icon_58f81e034339e8a4321021d2f13f858f);
+        
+    
+        var popup_368318d27feb5a3f0358cd7913d4c8e8 = L.popup({"maxWidth": 300});
+
+        
+            var html_89835f15471490922c6db3803028651d = $(`<div id="html_89835f15471490922c6db3803028651d" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/Э2<br><b>Вид работ</b> Экспертиза<br><b>Дата выезда</b> 26.01.2023<br><b>Время выезда</b> 9:00<br><b>Кадастровый номер</b> 35:25:0705004:1430, 35:25:0705004:1433</div>`)[0];
+            popup_368318d27feb5a3f0358cd7913d4c8e8.setContent(html_89835f15471490922c6db3803028651d);
+        
+
+        marker_0850efd98a59e4a41e8c59eee47eac7a.bindPopup(popup_368318d27feb5a3f0358cd7913d4c8e8)
+        ;
+
+        
+    
+    
+            var marker_f401317649015c9be1d84df38a316c62 = L.marker(
+                [59.485422, 39.585062],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_2ec4030e1716c151507daafe8c5bd524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f401317649015c9be1d84df38a316c62.setIcon(icon_2ec4030e1716c151507daafe8c5bd524);
+        
+    
+        var popup_3e4742bf1fad39f42dc2f7911df8efba = L.popup({"maxWidth": 300});
+
+        
+            var html_557f04bf980afbc61472a4fbbecf817e = $(`<div id="html_557f04bf980afbc61472a4fbbecf817e" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/Э3<br><b>Вид работ</b> Экспертиза<br><b>Дата выезда</b> 25.01.2023<br><b>Время выезда</b> 9:30<br><b>Кадастровый номер</b> 35:25:0202024:7, 35:25:0202024:8, 35:25:0202024:9</div>`)[0];
+            popup_3e4742bf1fad39f42dc2f7911df8efba.setContent(html_557f04bf980afbc61472a4fbbecf817e);
+        
+
+        marker_f401317649015c9be1d84df38a316c62.bindPopup(popup_3e4742bf1fad39f42dc2f7911df8efba)
+        ;
+
+        
+    
+    
+            var marker_db40bee4d1f04706f14e1272a0b201c4 = L.marker(
+                [59.273382, 39.879557],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_c9aeafe24376f5998fe5ec5173e0efdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "pencil", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_db40bee4d1f04706f14e1272a0b201c4.setIcon(icon_c9aeafe24376f5998fe5ec5173e0efdd);
+        
+    
+        var popup_3b5380c4d4605bfc07c1604db8b62738 = L.popup({"maxWidth": 300});
+
+        
+            var html_723d839900770a5a783b75eed1d169c7 = $(`<div id="html_723d839900770a5a783b75eed1d169c7" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/Э4<br><b>Вид работ</b> Экспертиза<br><b>Дата выезда</b> 24.01.2023<br><b>Время выезда</b> 9:00<br><b>Кадастровый номер</b> 35:25:0505014:1282</div>`)[0];
+            popup_3b5380c4d4605bfc07c1604db8b62738.setContent(html_723d839900770a5a783b75eed1d169c7);
+        
+
+        marker_db40bee4d1f04706f14e1272a0b201c4.bindPopup(popup_3b5380c4d4605bfc07c1604db8b62738)
+        ;
+
+        
+    
+    
+            var marker_4bcde4de2c9a9086e51a08e71716ba35 = L.marker(
+                [59.146841, 37.577499],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_e801d2a74829c824d91e941774ee8acd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4bcde4de2c9a9086e51a08e71716ba35.setIcon(icon_e801d2a74829c824d91e941774ee8acd);
+        
+    
+        var popup_ab5ac4df7e0da527b77ff705a43f1962 = L.popup({"maxWidth": 300});
+
+        
+            var html_295a26717c2ef298a99e11d750220124 = $(`<div id="html_295a26717c2ef298a99e11d750220124" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/Э5<br><b>Вид работ</b> Экспертиза<br><b>Дата выезда</b> 01.02.2023<br><b>Время выезда</b> 12:00<br><b>Кадастровый номер</b> 35:22:0115001:2034, 35:22:0115001:101</div>`)[0];
+            popup_ab5ac4df7e0da527b77ff705a43f1962.setContent(html_295a26717c2ef298a99e11d750220124);
+        
+
+        marker_4bcde4de2c9a9086e51a08e71716ba35.bindPopup(popup_ab5ac4df7e0da527b77ff705a43f1962)
+        ;
+
+        
+    
+    
+            var marker_0671966403e92843208ae430d6fca5e9 = L.marker(
+                [59.203736, 39.827798],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_9cde3afb683ed4c176489db6cab29d1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "check", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0671966403e92843208ae430d6fca5e9.setIcon(icon_9cde3afb683ed4c176489db6cab29d1a);
+        
+    
+        var popup_707970bf119fb114b22fd328324d64b9 = L.popup({"maxWidth": 300});
+
+        
+            var html_5828626fd0f1e5a3f3c2be3bf2594dd1 = $(`<div id="html_5828626fd0f1e5a3f3c2be3bf2594dd1" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1022<br><b>Вид работ</b> Техплан гаража<br><b>Дата выезда</b> 19.01.2023<br><b>Время выезда</b> 15:00<br><b>Кадастровый номер</b> -</div>`)[0];
+            popup_707970bf119fb114b22fd328324d64b9.setContent(html_5828626fd0f1e5a3f3c2be3bf2594dd1);
+        
+
+        marker_0671966403e92843208ae430d6fca5e9.bindPopup(popup_707970bf119fb114b22fd328324d64b9)
+        ;
+
+        
+    
+    
+            var marker_049072a8cbe62452af84bcb21a6b3f85 = L.marker(
+                [58.877044, 40.241893],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_36ec98755f8efdaf973394f5a9de43ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "pencil", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_049072a8cbe62452af84bcb21a6b3f85.setIcon(icon_36ec98755f8efdaf973394f5a9de43ba);
+        
+    
+        var popup_e7b43bdb1dd5dd1e33d00ef8f3f77dca = L.popup({"maxWidth": 300});
+
+        
+            var html_0898c8141fb862d7737b412c296ddfbf = $(`<div id="html_0898c8141fb862d7737b412c296ddfbf" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1025<br><b>Вид работ</b> Межевание<br><b>Дата выезда</b> 24.01.2023<br><b>Время выезда</b> 14:00<br><b>Кадастровый номер</b> рядом с участком  35:28:0402001:570</div>`)[0];
+            popup_e7b43bdb1dd5dd1e33d00ef8f3f77dca.setContent(html_0898c8141fb862d7737b412c296ddfbf);
+        
+
+        marker_049072a8cbe62452af84bcb21a6b3f85.bindPopup(popup_e7b43bdb1dd5dd1e33d00ef8f3f77dca)
+        ;
+
+        
+    
+    
+            var marker_229cf81b8e2069ef42b2dd4d86002947 = L.marker(
+                [59.190978, 39.869555],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_f3f87709fe9ad93f629886dd28e3d417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": " ", "iconColor": "white", "markerColor": " ", "prefix": "fa"}
+            );
+            marker_229cf81b8e2069ef42b2dd4d86002947.setIcon(icon_f3f87709fe9ad93f629886dd28e3d417);
+        
+    
+        var popup_346bcab2841c587712288b331ed754ff = L.popup({"maxWidth": 300});
+
+        
+            var html_fcd0e413de631e2ecf0a533bd6d00d6b = $(`<div id="html_fcd0e413de631e2ecf0a533bd6d00d6b" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1034<br><b>Вид работ</b> Техплан гаража<br><b>Дата выезда</b> -<br><b>Время выезда</b> -<br><b>Кадастровый номер</b> -</div>`)[0];
+            popup_346bcab2841c587712288b331ed754ff.setContent(html_fcd0e413de631e2ecf0a533bd6d00d6b);
+        
+
+        marker_229cf81b8e2069ef42b2dd4d86002947.bindPopup(popup_346bcab2841c587712288b331ed754ff)
+        ;
+
+        
+    
+    
+            var marker_ff6720969c743d0512f5c52f9da60110 = L.marker(
+                [59.19751, 39.849753],
+                {}
+            ).addTo(map_d26a598842863414057f0699eb672cb4);
+        
+    
+            var icon_985a27f292bc12b00f881d34c122a066 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": " ", "iconColor": "white", "markerColor": " ", "prefix": "fa"}
+            );
+            marker_ff6720969c743d0512f5c52f9da60110.setIcon(icon_985a27f292bc12b00f881d34c122a066);
+        
+    
+        var popup_e9ab08df012771bc43b1327f51b1bace = L.popup({"maxWidth": 300});
+
+        
+            var html_a62e48eaad42bea7d3d4293c3c04273e = $(`<div id="html_a62e48eaad42bea7d3d4293c3c04273e" style="width: 100.0%; height: 100.0%;"><b>Договор</b> 23/к1029<br><b>Вид работ</b> Техплан гаража<br><b>Дата выезда</b> -<br><b>Время выезда</b> -<br><b>Кадастровый номер</b> -</div>`)[0];
+            popup_e9ab08df012771bc43b1327f51b1bace.setContent(html_a62e48eaad42bea7d3d4293c3c04273e);
+        
+
+        marker_ff6720969c743d0512f5c52f9da60110.bindPopup(popup_e9ab08df012771bc43b1327f51b1bace)
+        ;
+
+        
+    
+</script>
